@@ -9,7 +9,7 @@ skip_before_action :authorized, only: [:new, :create, :welcome]
     @user = User.find_by(username: params[:username])
     # .authenticate is a method of Bcrypt
     if @user && @user.authenticate(params[:password])
-      sessions[:user_id] = @user.id
+      session[:user_id] = @user.id
 
       redirect_to '/welcome'
     else

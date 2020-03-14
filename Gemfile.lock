@@ -59,7 +59,6 @@ GEM
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     bcrypt (3.1.13)
-    bcrypt-ruby (3.0.1)
     bindex (0.8.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
@@ -203,7 +202,6 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
-  bcrypt-ruby
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
