@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resurrected</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <ul>
+      <li><%= link_to 'Welcome', controller: 'welcome' %></li>
+      <li><%= link_to 'About Me', controller: 'about_me' %></li>
+    </ul>
+    <h1>Gradenecker</h1>
+    <h2 style="color: #eee">rectificaciones</h2>
+    <hr>
+    <%= yield %>
+  </body>
+</html>
