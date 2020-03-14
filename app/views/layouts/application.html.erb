@@ -8,13 +8,11 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <body>
+  <body style="padding: 10em;">
     <ul>
-      <li><%= link_to 'Welcome', controller: 'welcome' %></li>
-      <li><%= link_to 'About Me', controller: 'about_me' %></li>
     </ul>
     <h1>RESURRECTED</h1>
-    <h2 style="color: #eee">god</h2>
+    <h2>god</h2>
     <hr>
     <%= yield %>
   </body>
